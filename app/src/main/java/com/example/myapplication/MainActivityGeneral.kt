@@ -24,7 +24,8 @@ class MainActivityGeneral : AppCompatActivity() {
         val switchCenter = findViewById<SwitchCompat>(R.id.switch_center)
         btn.setOnClickListener {
             supportFragmentManager.beginTransaction().apply {
-                replace(R.id.main, GuideLineFragment.create())
+                //replace(R.id.main, GuideLineFragment.create())
+                replace(R.id.main, PlaceholderFragment())
                 commitAllowingStateLoss()
             }
         }

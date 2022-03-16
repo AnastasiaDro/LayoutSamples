@@ -30,7 +30,13 @@ class GuideLineFragment : Fragment() {
         return (inflater.inflate(R.layout.fragment_guide_line, container, false) as ViewGroup)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        buttonBorder = view.findViewById(R.id.button)
+        buttonBorder.setOnClickListener{
 
+        }
+    }
 
     companion object {
         fun create() = GuideLineFragment()

@@ -12,7 +12,6 @@
         android:layout_height="match_parent"
         tools:context=".MainActivityGeneral">
 
-
         <androidx.constraintlayout.widget.Group
             android:id="@+id/group"
             android:layout_width="wrap_content"
