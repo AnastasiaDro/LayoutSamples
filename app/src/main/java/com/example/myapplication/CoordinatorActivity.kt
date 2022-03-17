@@ -7,7 +7,7 @@ import android.widget.Button
 import androidx.appcompat.widget.SwitchCompat
 import androidx.constraintlayout.widget.Group
 
-class RelativeActivity : AppCompatActivity() {
+class CoordinatorActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

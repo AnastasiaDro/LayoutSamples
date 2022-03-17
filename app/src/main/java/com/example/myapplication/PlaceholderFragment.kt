@@ -23,7 +23,7 @@ class PlaceholderFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return (inflater.inflate(R.layout.placeholder_layout, container, false) as ViewGroup)
+        return (inflater.inflate(R.layout.fragment_placeholder, container, false) as ViewGroup)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -36,12 +36,13 @@ class PlaceholderFragment : Fragment() {
             placeholder = findViewById(R.id.placeholder)
             button2 = findViewById(R.id.button2)
             button3 = findViewById(R.id.button3)
+
             onClickListener = View.OnClickListener {
                 TransitionManager.beginDelayedTransition(layout)
                 placeholder.setContentId(it.id) }
+
             button2.setOnClickListener(onClickListener)
             button3.setOnClickListener(onClickListener)
-
         }
 
     }
