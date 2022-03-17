@@ -9,7 +9,8 @@
         android:id="@+id/appbar"
 
         android:layout_height="192dp"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
